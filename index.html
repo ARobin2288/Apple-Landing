@@ -15,110 +15,96 @@
 <body>
     <div class="container">
         <header>
-            <h1>Wikipedia</h1>
-            <h4>The Free Encyclopedia</h4>
+            <div class="heading">
+                <h1><span>W</span>IKIPEDI<span>A</span></h1>
+                <h4>The Free Encyclopedia</h4>
+            </div>
         </header>
         <main>
-            <div class="row" id="languages">
-                <div class="col-4">
-                    <ul>
-                        <li>
-                            <strong>English</strong>
-                            <br/>
-                            <small>6 326 000+ articles</small>
-                        </li>
-                        <li>
-                            <strong>Español</strong>
-                            <br />
-                            <small>1 696 000+ artículos</small>
-                        </li>
-                        <li>
-                            <strong>Русский</strong>
-                            <br />
-                            <small>1 734 000+ статей</small>
-                        </li>
-                        <li>
-                            <strong>中文</strong>
-                            <br />
-                            <small>1 206 000+ 條目</small>
-                        </li>
-                        <li>
-                            <strong>Português</strong>
-                            <br />
-                            <small>1 066 000+ artigos</small>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <div class="globe">
+            <div class="globe-container">
+                <div class="row">
+                    <div class="col-4" id="languagesleft">
+                        <ul>
+                            <li class="ll1">
+                                <strong>English</strong>
+                                <br/>
+                                <small>6 326 000+ articles</small>
+                            </li>
+                            <li class="ll2">
+                                <strong>Español</strong>
+                                <br />
+                                <small>1 696 000+ artículos</small>
+                            </li>
+                            <li class="ll3">
+                                <strong>Русский</strong>
+                                <br />
+                                <small>1 734 000+ статей</small>
+                            </li>
+                            <li class="ll4">
+                                <strong>中文</strong>
+                                <br />
+                                <small>1 206 000+ 條目</small>
+                            </li>
+                            <li class="ll5">
+                                <strong>Português</strong>
+                                <br />
+                                <small>1 066 000+ artigos</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4" id="globe">
                         <img src="./style/Wikipedia-logo.png" alt="puzzle globle Wikipedia" width="200" height="183">
                     </div>
-                </div>
-                <div class="col-4">
-                    <ul>
-                        <li>
-                            <strong>日本語</strong>
-                            <br />
-                            <small>1 275 000+ 記事</small>
-                        </li>
-                        <li>
-                            <strong>Deutsch</strong>
-                            <br />
-                            <small>2 590 000+ Artikel</small>
-                        </li>
-                        <li>
-                            <strong>Français</strong>
-                            <br />
-                            <small>2 340 000+ articles</small>
-                        </li>
-                        <li>
-                            <strong>Italiano</strong>
-                            <br />
-                            <small>1 701 000+ voci</small>
-                        </li>
-                        <li>
-                            <strong>Polski</strong>
-                            <br />
-                            <small>1 480 000+ haseł</small>
-                        </li>
-                    </ul>
+                    <div class="col-4" id="languagesright">
+                        <ul>
+                            <li class="lr1">
+                                <strong>日本語</strong>
+                                <br />
+                                <small>1 275 000+ 記事</small>
+                            </li>
+                            <li class="lr2">
+                                <strong>Deutsch</strong>
+                                <br />
+                                <small>2 590 000+ Artikel</small>
+                            </li>
+                            <li class="lr3">
+                                <strong>Français</strong>
+                                <br />
+                                <small>2 340 000+ articles</small>
+                            </li>
+                            <li class="lr4">
+                                <strong>Italiano</strong>
+                                <br />
+                                <small>1 701 000+ voci</small>
+                            </li>
+                            <li class="lr5">
+                                <strong>Polski</strong>
+                                <br />
+                                <small>1 480 000+ haseł</small>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <form>
+            <form id="searchbar">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">en </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                    <button type="button" class="btn btn-outline-secondary">Search</button>
+                    <input type="text" class="form-control">
+                    <button class="btn btn-outline-secondary" type="button" id="dropbutton">EN <i class="fas fa-chevron-down fa-sm"></i></button>
+                    <button type="button" class="btn btn-outline-secondary" id="searchbutton"><i class="fas fa-search fa-lg"></i></button>
                 </div>
             </form>
             <form class="seconddrop">
-                <hr/>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option selected>Read Wikipedia in your language</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <hr/>
+                <button><i class="fas fa-language fa-lg"></i><span>Read Wikipedia in your language</span><i class="fas fa-chevron-down fa-xs"></i></button>
             </form>
         </main>
+        <hr/>
         <footer>
-            <hr/>
             <div class="row">
                 <div class="col-3" id="sidebar">
                     <div class="host">
-                        <p>Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.
-                        You can support our work with a donation.</p>
+                        <img src="./style/download.png" alt="wikimedia logo" width="35">
+                        <p>Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.</p>
+                        <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&utm_medium=portal&utm_source=portalFooter&utm_campaign=portalFooter">You can support our work with a donation.</a>
                     </div>
                     <div class="download">
                         <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications">Download Wikipedia for Android or iOS</a>
