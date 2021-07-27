@@ -239,11 +239,12 @@ footer {
   display: block;
   margin-bottom: 32px;
   font-size: 13px;
+  width: 350px;
 }
 
 #sidebar img {
   position: absolute;
-  top: 0;
+  top: 5;
   left: 0.8rem;
   vertical-align: middle;
 }
@@ -255,7 +256,6 @@ footer {
   padding-right: 20px;
   color: #54595d;
   line-height: 19.5px;
-  width: 350px;
 }
 
 #sidebar .host a {
@@ -275,4 +275,22 @@ footer {
   background-color: #f8f9fa;
   padding: 8px 20px 8px 60px;
   text-align: left;
+}
+
+#sidebar .download a {
+  color: #36c;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#sidebar .download p {
+  margin: 13px 0;
+}
+
+#sidebar .download button {
+  width: 124px;
+  height: 38px;
+  background-color: black;
+  border-radius: 5px;
+  color: #fff;
 }
