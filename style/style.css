@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  min-width: 1440px;
   height: auto;
   margin: 0 auto;
   text-align: center;
@@ -80,66 +80,67 @@ main li small {
 }
 
 #languagesleft {
-  padding: 0;
+  padding-left: 75px;
 }
+
 #languagesleft .ll1 {
   top: 0;
-  margin-right: -80px;
+  margin-right: -90px;
 }
 
 #languagesleft .ll2 {
   top: 0;
-  margin-left: -25px;
+  margin-left: -18px;
 }
 
 #languagesleft .ll3 {
   top: 0;
-  margin-left: -50px;
+  margin-left: -40px;
 }
 
 #languagesleft .ll4 {
   top: 0;
-  margin-left: -22px;
+  margin-left: -20px;
 }
 
 #languagesleft .ll5 {
   top: 0;
-  margin-right: -80px;
+  margin-right: -90px;
 }
 
 #globe {
   text-align: center;
-  padding: 0;
-  margin-top: 58px;
+  padding-right: 130px;
+  margin-top: 62px;
 }
 
 #languagesright {
-  padding: 0;
+  padding-right: 80px;
 }
 
 #languagesright .lr1 {
   top: 0;
-  margin-left: -150px;
+  margin-left: -168px;
 }
 
 #languagesright .lr2 {
   top: 0;
-  margin-left: -40px;
+  margin-left: -60px;
 }
 
 #languagesright .lr3 {
   top: 0;
-  margin-left: -18px;
+  margin-left: -38px;
 }
 
 #languagesright .lr4 {
   top: 0;
-  margin-left: -40px;
+  margin-left: -60px;
 }
 
 #languagesright .lr5 {
   top: 0;
-  margin-left: -150px;
+  margin-left: -170px;
 }
 
 #searchbar {
@@ -228,7 +229,14 @@ footer {
 }
 
 #sidebar {
-  width: 35%;
+  margin: 0 auto;
+  padding-bottom: 12.8px;
+  padding-left: 54px;
+  padding-right: 12.8px;
+}
+
+#sidebar .leftside {
+  margin-right: 0;
   line-height: 1.5;
 }
 
@@ -238,7 +246,6 @@ footer {
   margin: 0 auto;
   display: block;
   margin-bottom: 32px;
-  font-size: 13px;
   width: 350px;
 }
 
@@ -251,11 +258,11 @@ footer {
 
 .host p {
   text-align: left;
-  margin: 0;
-  padding-left: 65px;
-  padding-right: 20px;
+  margin: 0 auto;
   color: #54595d;
   line-height: 19.5px;
+  padding: 0 20px 0 60px;
+  font-size: 13px;
 }
 
 #sidebar .host a {
@@ -285,6 +292,9 @@ footer {
 
 #sidebar .download p {
   margin: 13px 0;
+  text-align: left;
+  color: #54595d;
+  line-height: 19.5px;
 }
 
 #sidebar .download button {
@@ -293,4 +303,89 @@ footer {
   background-color: black;
   border-radius: 5px;
   color: #fff;
+  font-size: 15px;
+  text-align: left;
+  padding: 0;
+  padding-left: 35px;
+  line-height: 12px;
+}
+
+#sidebar .download button img {
+  margin-left: 55px;
+}
+
+#sidebar .download #applebutton img {
+  margin-left: 180px;
+}
+
+#sidebar .download button small {
+  font-size: 10px;
+}
+
+#sidebar .one li {
+  width: 100%;
+  margin-left: 110px;
+  padding: 16px 13px 30px 15px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+#sidebar .one img {
+  left: 525px;
+}
+
+#sidebar h6 {
+  color: #36c;
+  font-size: 13px;
+  margin: 0 auto;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#sidebar p {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 400;
+  color: #54595d;
+}
+
+#sidebar .two li {
+  width: 100%;
+  margin-left: 80px;
+  padding: 16px 13px 30px 15px;
+  text-align: left;
+}
+
+#sidebar .two img {
+  left: 830px;
+}
+
+#sidebar .three li {
+  width: 100%;
+  margin-left: 40px;
+  padding: 16px 13px 30px 15px;
+  text-align: left;
+}
+
+#sidebar .three img {
+  left: 1125px;
+}
+
+.final {
+  text-align: center;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #54595d;
+  margin-top: 14px;
+  letter-spacing: 0.2px;
+}
+
+.final p {
+  margin: 0 auto;
+}
+
+.final a {
+  text-decoration: none;
+  color: #36c;
 }
