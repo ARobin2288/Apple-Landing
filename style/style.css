@@ -151,24 +151,24 @@ main li small {
 #searchbar input {
   width: 26px;
   height: 44px;
-  border: 1px solid #7d8288;
+  border: 1px solid #a2a9b1;
   border-radius: 0%;
   opacity: 0.8;
   border-right: none;
 }
 
 #dropbutton {
-  border: 1px solid #7d8288;
+  border: 1px solid #a2a9b1;
   border-radius: 0%;
   border-left: none;
   margin-left: -55px;
   font-size: 13px;
-  color: black;
+  color: #54595d;
 }
 
 #dropbutton:hover {
   background-color: #fff;
-  color: black;
+  color: #54595d;
 }
 
 .fa-chevron-down {
@@ -194,7 +194,7 @@ main li small {
 
 .seconddrop button {
   width: 304px;
-  border: 1px solid black;
+  border: 1px solid #a2a9b1;
   background-color: #fff;
   height: 36px;
 }
@@ -213,29 +213,66 @@ main li small {
 }
 
 hr {
-  width: 1350px;
+  width: 100%;
   margin: 0 auto;
 }
 
 footer {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 41.6px 12.8px 12.8px;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Lato,
+    Helvetica, Arial, sans-serif;
 }
 
 #sidebar {
-  width: 350px;
+  width: 35%;
   line-height: 1.5;
 }
 
-#sidebar .host {
-  margin: 0 0 32px;
+#sidebar .host,
+.download {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 32px;
+  font-size: 13px;
 }
 
-#sideebar img {
-  object-position: left top;
+#sidebar img {
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  vertical-align: middle;
 }
-#sidebar p {
-  padding-left: 6rem;
-  padding-right: 2rem;
+
+.host p {
+  text-align: left;
+  margin: 0;
+  padding-left: 65px;
+  padding-right: 20px;
   color: #54595d;
-  position: relative;
+  line-height: 19.5px;
+  width: 350px;
+}
+
+#sidebar .host a {
+  cursor: pointer;
+  color: #36c;
+  line-height: 19.5px;
+  font-size: 13px;
+  text-align: left;
+  text-decoration: none;
+}
+
+#sidebar .host a:hover {
+  text-decoration: underline;
+}
+
+#sidebar .download {
+  background-color: #f8f9fa;
+  padding: 8px 20px 8px 60px;
+  text-align: left;
 }
