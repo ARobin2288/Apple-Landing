@@ -1,259 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Wikipedia</title>
-    <script src="https://kit.fontawesome.com/ea6c14e433.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/ea6c14e433.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <div class="heading">
-                <h1><span>W</span>IKIPEDI<span>A</span></h1>
-                <h4>The Free Encyclopedia</h4>
+      <header>
+        <div class="heading">
+          <h1><span>W</span>IKIPEDI<span>A</span></h1>
+          <h4>The Free Encyclopedia</h4>
+        </div>
+      </header>
+      <main>
+        <div class="globe-container">
+          <div class="row">
+            <div class="col-4" id="languagesleft">
+              <ul>
+                <li class="ll1">
+                  <strong>English</strong>
+                  <br />
+                  <small>6 326 000+ articles</small>
+                </li>
+                <li class="ll2">
+                  <strong>Español</strong>
+                  <br />
+                  <small>1 696 000+ artículos</small>
+                </li>
+                <li class="ll3">
+                  <strong>Русский</strong>
+                  <br />
+                  <small>1 734 000+ статей</small>
+                </li>
+                <li class="ll4">
+                  <strong>中文</strong>
+                  <br />
+                  <small>1 206 000+ 條目</small>
+                </li>
+                <li class="ll5">
+                  <strong>Português</strong>
+                  <br />
+                  <small>1 066 000+ artigos</small>
+                </li>
+              </ul>
             </div>
-        </header>
-        <main>
-            <div class="globe-container">
-                <div class="row">
-                    <div class="col-4" id="languagesleft">
-                        <ul>
-                            <li class="ll1">
-                                <strong>English</strong>
-                                <br/>
-                                <small>6 326 000+ articles</small>
-                            </li>
-                            <li class="ll2">
-                                <strong>Español</strong>
-                                <br />
-                                <small>1 696 000+ artículos</small>
-                            </li>
-                            <li class="ll3">
-                                <strong>Русский</strong>
-                                <br />
-                                <small>1 734 000+ статей</small>
-                            </li>
-                            <li class="ll4">
-                                <strong>中文</strong>
-                                <br />
-                                <small>1 206 000+ 條目</small>
-                            </li>
-                            <li class="ll5">
-                                <strong>Português</strong>
-                                <br />
-                                <small>1 066 000+ artigos</small>
-                            </li>
-                        </ul>
+            <div class="col-4" id="globe">
+              <img
+                src="./style/Wikipedia-logo.png"
+                alt="puzzle globle Wikipedia"
+                width="200"
+                height="183"
+              />
+            </div>
+            <div class="col-4" id="languagesright">
+              <ul>
+                <li class="lr1">
+                  <strong>日本語</strong>
+                  <br />
+                  <small>1 275 000+ 記事</small>
+                </li>
+                <li class="lr2">
+                  <strong>Deutsch</strong>
+                  <br />
+                  <small>2 590 000+ Artikel</small>
+                </li>
+                <li class="lr3">
+                  <strong>Français</strong>
+                  <br />
+                  <small>2 340 000+ articles</small>
+                </li>
+                <li class="lr4">
+                  <strong>Italiano</strong>
+                  <br />
+                  <small>1 701 000+ voci</small>
+                </li>
+                <li class="lr5">
+                  <strong>Polski</strong>
+                  <br />
+                  <small>1 480 000+ haseł</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form id="searchbar">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="dropbutton"
+            >
+              EN <i class="fas fa-chevron-down fa-sm"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              id="searchbutton"
+            >
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </div>
+        </form>
+        <form class="seconddrop">
+          <button>
+            <i class="fas fa-language fa-lg"></i
+            ><span>Read Wikipedia in your language</span
+            ><i class="fas fa-chevron-down fa-xs"></i>
+          </button>
+        </form>
+      </main>
+      <hr />
+      <footer>
+        <div id="sidebar">
+          <div class="row">
+            <div class="col-3">
+              <div class="leftside">
+                <div class="host">
+                  <div class="clearfix">
+                    <div style="float: left">
+                      <img
+                        src="./style/download.png"
+                        alt="wikimedia logo"
+                        width="40"
+                      />
                     </div>
-                    <div class="col-4" id="globe">
-                        <img src="./style/Wikipedia-logo.png" alt="puzzle globle Wikipedia" width="200" height="183">
+                    <div style="float: left">
+                      <p>
+                        Wikipedia is hosted by the Wikimedia Foundation, a
+                        non-profit organization that also hosts a range of other
+                        projects.<br />
+                        <a
+                          href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&utm_medium=portal&utm_source=portalFooter&utm_campaign=portalFooter"
+                          >You can support our work with a donation.</a
+                        >
+                      </p>
                     </div>
-                    <div class="col-4" id="languagesright">
-                        <ul>
-                            <li class="lr1">
-                                <strong>日本語</strong>
-                                <br />
-                                <small>1 275 000+ 記事</small>
-                            </li>
-                            <li class="lr2">
-                                <strong>Deutsch</strong>
-                                <br />
-                                <small>2 590 000+ Artikel</small>
-                            </li>
-                            <li class="lr3">
-                                <strong>Français</strong>
-                                <br />
-                                <small>2 340 000+ articles</small>
-                            </li>
-                            <li class="lr4">
-                                <strong>Italiano</strong>
-                                <br />
-                                <small>1 701 000+ voci</small>
-                            </li>
-                            <li class="lr5">
-                                <strong>Polski</strong>
-                                <br />
-                                <small>1 480 000+ haseł</small>
-                            </li>
-                        </ul>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <form id="searchbar">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control">
-                    <button class="btn btn-outline-secondary" type="button" id="dropbutton">EN <i class="fas fa-chevron-down fa-sm"></i></button>
-                    <button type="button" class="btn btn-outline-secondary" id="searchbutton"><i class="fas fa-search fa-lg"></i></button>
+                <div class="download">
+                  <div class="clearfix">
+                    <div style="float: left">
+                      <img
+                        src="./style/wikipedialogo.png"
+                        alt="wikipedia logo"
+                        width="40"
+                      />
+                    </div>
+                    <div style="float: left">
+                      <a
+                        href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications"
+                      >
+                        <strong>Download Wikipedia for Android or iOS</strong>
+                      </a>
+                      <p>
+                        Save your favorite articles to read offline, sync your
+                        reading lists across devices and customize your reading
+                        experience with the official Wikipedia app.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        id="googlebutton"
+                      >
+                        <img src="./style/google arrow.png" width="20" />
+                        <small>GET IT ON</small><br />Google Play
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        id="applebutton"
+                      >
+                        <img src="./style/applelogo.png" width="25" />
+                        <small>Download on the</small><br />App Store
+                      </button>
+                    </div>
+                  </div>
                 </div>
-            </form>
-            <form class="seconddrop">
-                <button><i class="fas fa-language fa-lg"></i><span>Read Wikipedia in your language</span><i class="fas fa-chevron-down fa-xs"></i></button>
-            </form>
-        </main>
-        <hr/>
-        <footer>
-            <div id="sidebar">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="leftside">
-                            <div class="host">
-                                <div class="clearfix">
-                                    <div style= "float: left;">
-                                        <img src="./style/download.png" alt="wikimedia logo" width="40">
-                                    </div>
-                                    <div style="float: left;">
-                                        <p>Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.<br/>
-                                        <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&utm_medium=portal&utm_source=portalFooter&utm_campaign=portalFooter">You can support our work with a donation.</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="download">
-                                <div class="clearfix">
-                                    <div style="float: left;">
-                                        <img src="./style/wikipedialogo.png" alt="wikipedia logo" width="40">
-                                    </div>
-                                    <div style="float: left;">
-                                        <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications">
-                                            <strong>Download Wikipedia for Android or iOS</strong>
-                                        </a>
-                                        <p>
-                                            Save your favorite articles to read offline, sync your reading lists across devices and customize your reading
-                                            experience with the official Wikipedia app.
-                                        </p>
-                                        <button type="button" class="btn btn-outline-secondary" id="googlebutton">
-                                            <img src="./style/google arrow.png" width="20">
-                                            <small>GET IT ON</small><br>Google Play
-                                        </button>
-                                        <button type="button" class="btn btn-outline-secondary" id="applebutton">
-                                            <img src="./style/applelogo.png" width="25">
-                                            <small>Download on the</small><br/>App Store
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <ul class="one">
+                <div class="clearfix">
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/commons.png" height="47" />
                     </div>
-                    <div class="col-3">
-                        <ul class="one">
-                            <div class="clearfix">
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/commons.png" height="47">
-                                    </div>
-                                    <h6>Commons</h6>
-                                    <p>Freely usable photos & more</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wikibookslogo.png" height="37">
-                                    </div>
-                                    <h6>Wikibooks</h6>
-                                    <p>Free textbooks</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wikiversity.png" width="43">
-                                    </div>
-                                    <h6>Wikiversity</h6>
-                                    <p>Free course material</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                    <img src="./style/Wikisource-logo.svg.png" height="39">
-                                    </div>
-                                    <h6>Wikisource</h6>
-                                    <p>Free Library</p>
-                                </li>
-                            </div>
-                        </ul>
+                    <h6>Commons</h6>
+                    <p>Freely usable photos & more</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wikibookslogo.png" height="37" />
                     </div>
-                    <div class="col-3">
-                        <ul class="two">
-                            <div class="clearfix">
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/newwikivoyage.jpeg" width="36">
-                                    </div>
-                                    <h6>Wikivoyage</h6>
-                                    <p>Free travel guide</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/Wikinews-logo.svg" width="47">
-                                    </div>
-                                    <h6>Wikinews</h6>
-                                    <p>Free news source</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wikiquote.png" height="42">
-                                    </div>
-                                    <h6>Wikiquote</h6>
-                                    <p>Free quote compendium</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wikispecies.png" height="42">
-                                    </div>
-                                    <h6>Wikispecies</h6>
-                                    <p>Free species directory</p>
-                                </li>
-                            </div>
-                        </ul>
+                    <h6>Wikibooks</h6>
+                    <p>Free textbooks</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wikiversity.png" width="43" />
                     </div>
-                    <div class="col-3">
-                        <ul class="three">
-                            <div class="clearfix">
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wiktionary.png" width="37">
-                                    </div>
-                                    <h6>Wiktionary</h6>
-                                    <p>Free dictionary</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/wikidatalogo.png" width="49">
-                                    </div>
-                                    <h6>Wikidata</h6>
-                                    <p>Free knowledge base</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/mediawiki.png" width="42">
-                                    </div>
-                                    <h6>MediaWiki</h6>
-                                    <p>Free and open wiki application</p>
-                                </li>
-                                <li>
-                                    <div style="float: left;">
-                                        <img src="./style/metawiki.png" width="37">
-                                    </div>
-                                    <h6>Meta-Wiki</h6>
-                                    <p>Community coordination & documentation</p>
-                                </li>
-                            </div>
-                        </ul>
+                    <h6>Wikiversity</h6>
+                    <p>Free course material</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/Wikisource-logo.svg.png" height="39" />
                     </div>
+                    <h6>Wikisource</h6>
+                    <p>Free Library</p>
+                  </li>
                 </div>
+              </ul>
             </div>
-            <hr/>
-            <div class="final">
-                <p>This page is available under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License </a>・<a href="https://meta.wikimedia.org/wiki/Terms_of_use"> Terms of Use </a> ・<a href="https://meta.wikimedia.org/wiki/Privacy_policy"> Privacy Policy</a></p>
+            <div class="col-3">
+              <ul class="two">
+                <div class="clearfix">
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/newwikivoyage.jpeg" width="36" />
+                    </div>
+                    <h6>Wikivoyage</h6>
+                    <p>Free travel guide</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/Wikinews-logo.svg" width="47" />
+                    </div>
+                    <h6>Wikinews</h6>
+                    <p>Free news source</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wikiquote.png" height="42" />
+                    </div>
+                    <h6>Wikiquote</h6>
+                    <p>Free quote compendium</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wikispecies.png" height="42" />
+                    </div>
+                    <h6>Wikispecies</h6>
+                    <p>Free species directory</p>
+                  </li>
+                </div>
+              </ul>
             </div>
-        </footer>
+            <div class="col-3">
+              <ul class="three">
+                <div class="clearfix">
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wiktionary.png" width="37" />
+                    </div>
+                    <h6>Wiktionary</h6>
+                    <p>Free dictionary</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/wikidatalogo.png" width="49" />
+                    </div>
+                    <h6>Wikidata</h6>
+                    <p>Free knowledge base</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/mediawiki.png" width="42" />
+                    </div>
+                    <h6>MediaWiki</h6>
+                    <p>Free and open wiki application</p>
+                  </li>
+                  <li>
+                    <div style="float: left">
+                      <img src="./style/metawiki.png" width="37" />
+                    </div>
+                    <h6>Meta-Wiki</h6>
+                    <p>Community coordination & documentation</p>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="final">
+          <p>
+            This page is available under the
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/"
+              >Creative Commons Attribution-ShareAlike License </a
+            >・<a href="https://meta.wikimedia.org/wiki/Terms_of_use">
+              Terms of Use
+            </a>
+            ・<a href="https://meta.wikimedia.org/wiki/Privacy_policy">
+              Privacy Policy</a
+            >
+          </p>
+        </div>
+      </footer>
     </div>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
-
-
-
-
